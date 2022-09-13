@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int n1,n2, choice;
+cout<<"enter the choice:"<<endl;
+cout<<"press 1 for addition:\n";
+cout<<"press 2 for subtraction:\n";
+cout<<"press 3 for multipication:\n";
+cout<<"press 4 for division:\n";
+cout<<"press 5 for modulus:\n";
+cin>>choice;
+cout<<"enter two numbers:"<<endl;
+cin>>n1>>n2;
+int addition,ssubtraction,division,multipication,modulus;
+switch(choice)
+{
+	case 1:
+		addition=n1+n2;
+		cout<<"addition result = "<<addition;
+		break;
+		case 2:
+	    ssubtraction =n1-n2;
+		cout<<"subtraction result ="<<ssubtraction;
+		break;
+		case 3:
+		multipication =n1*n2;
+		cout<<"multipication result ="<<multipication;
+		break;
+		case 4:
+		division=n1/n2;
+		cout<<"division result ="<<division;
+		break;
+		case 5:
+		modulus=n1%n2;
+		cout<<"modulus result ="<<modulus;
+		break;
+}
+	return 0;
+}
